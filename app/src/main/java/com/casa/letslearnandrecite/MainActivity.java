@@ -33,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "ini close button", Toast.LENGTH_SHORT).show();
             }
         });
+
+        ImageView settingButton = findViewById(R.id.settingButton);
+        settingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO masukin fungsi setting button loh
+                Toast.makeText(getApplicationContext(), "ini setting button yaa", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     //Fullscreen
