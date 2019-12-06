@@ -24,10 +24,19 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Learn Now Button di Click", Toast.LENGTH_SHORT).show();
             }
         });
+
+        ImageView closeButton = findViewById(R.id.closeButton);
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO masukin fungsi close button disni
+                Toast.makeText(getApplicationContext(), "ini close button", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     //Fullscreen
-    private void hideSystemUI() {
+    private void hideSystemUI()  {
         // Enables regular immersive mode.
         // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
         // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
