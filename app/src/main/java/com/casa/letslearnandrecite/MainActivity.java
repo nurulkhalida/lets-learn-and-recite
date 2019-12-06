@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +14,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         hideSystemUI();
+
+        ImageView learnNowButton = findViewById(R.id.learnNowButton);
+        learnNowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TODO masukin fungsi learnow disini
+                //ini nanti diapus aja Toastnya
+                Toast.makeText(getApplicationContext(), "Learn Now Button di Click", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     //Fullscreen
