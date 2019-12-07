@@ -20,7 +20,17 @@ public class HijaiyahActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent myIntent = new Intent(HijaiyahActivity.this, BacaHijaiyahActivity.class);
                 startActivity(myIntent);
+
+            }
+        });
+
+        ImageView closeButton = findViewById(R.id.closeButton);
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
 }
+
