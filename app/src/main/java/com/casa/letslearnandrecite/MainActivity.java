@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         ImageView closeButton = findViewById(R.id.closeButton);
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override

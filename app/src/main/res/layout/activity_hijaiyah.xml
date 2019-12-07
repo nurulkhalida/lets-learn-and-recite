@@ -7,14 +7,14 @@
     tools:context=".HijaiyahActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/background" />
 
     <ImageView
-        android:id="@+id/ButtonHijaiyah"
+        android:id="@+id/buttonHijaiyah"
         android:layout_width="137dp"
         android:layout_height="176dp"
         android:adjustViewBounds="true"
@@ -42,9 +42,20 @@
         android:src="@drawable/fathah"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ButtonHijaiyah"
+        app:layout_constraintStart_toEndOf="@+id/buttonHijaiyah"
         app:layout_constraintEnd_toStartOf="@id/buttonKasroh"/>
 
+
+    <!--TODO JANGAN LUPA DIGANTI SAMA LOGO BACK-->
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

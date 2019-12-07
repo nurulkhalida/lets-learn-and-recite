@@ -2,7 +2,10 @@ package com.casa.letslearnandrecite;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class HijaiyahActivity extends AppCompatActivity {
 
@@ -11,5 +14,13 @@ public class HijaiyahActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hijaiyah);
 
+        ImageView buttonHijaiyah = findViewById(R.id.buttonHijaiyah);
+        buttonHijaiyah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(HijaiyahActivity.this, BacaHijaiyahActivity.class);
+                startActivity(myIntent);
+            }
+        });
     }
 }
