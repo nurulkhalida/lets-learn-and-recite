@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BacaHijaiyahActivity">
+    tools:context=".KarsohActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/background"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
 
     <ImageView
-        android:id="@+id/alifButton"
+        android:id="@+id/alifKasroh"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:src="@drawable/alif"
+        android:src="@drawable/alif_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,235 +25,234 @@
         />
 
     <ImageView
-        android:id="@+id/baButton"
+        android:id="@+id/baKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ba"
+        android:src="@drawable/ba_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
     <ImageView
-        android:id="@+id/taButton"
+        android:id="@+id/taKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ta"
+        android:src="@drawable/ta_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/baButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/baKasroh"/>
 
     <ImageView
-        android:id="@+id/saButton"
+        android:id="@+id/saKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/sa"
+        android:src="@drawable/sa_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/taButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/taKasroh"/>
 
     <ImageView
-        android:id="@+id/jaButton"
+        android:id="@+id/jaKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ja"
+        android:src="@drawable/ja_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/saButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/saKasroh"/>
 
     <ImageView
-        android:id="@+id/haButton"
+        android:id="@+id/haKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ha"
+        android:src="@drawable/ha_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/jaButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/jaKasroh"/>
 
     <ImageView
-        android:id="@+id/khoButton"
+        android:id="@+id/khoKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/kho"
+        android:src="@drawable/kho_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/haButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/haKasroh"/>
 
     <ImageView
-    android:id="@+id/daButton"
-    android:layout_width="60dp"
-    android:layout_height="wrap_content"
-    android:src="@drawable/da"
-    android:adjustViewBounds="true"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toStartOf="@+id/khoButton"/>
-
-    <ImageView
-        android:id="@+id/dzaButton"
+        android:id="@+id/diKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/dza"
+        android:src="@drawable/di_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/daButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/khoKasroh"/>
 
     <ImageView
-        android:id="@+id/roButton"
+        android:id="@+id/dzaKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ro"
+        android:src="@drawable/dza_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/dzaButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/diKasroh"/>
 
     <ImageView
-        android:id="@+id/dzalButton"
+        android:id="@+id/roKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/dzal"
+        android:src="@drawable/ro_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/roButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/dzaKasroh"/>
 
     <ImageView
-        android:id="@+id/syaButton"
+        android:id="@+id/dzalKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/sya"
+        android:src="@drawable/dzal_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/dzalButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/roKasroh"/>
 
     <ImageView
-        android:id="@+id/syinButton"
+        android:id="@+id/syaKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/syin"
+        android:src="@drawable/sya_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/syaButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/dzalKasroh"/>
 
     <ImageView
-        android:id="@+id/soButton"
+        android:id="@+id/syinKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/so"
+        android:src="@drawable/syin_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/syinButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/syaKasroh"/>
 
     <ImageView
-        android:id="@+id/dotButton"
+        android:id="@+id/soKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/dot"
+        android:src="@drawable/so_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/soButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/syinKasroh"/>
 
     <ImageView
-        android:id="@+id/toButton"
+        android:id="@+id/dotKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/to"
+        android:src="@drawable/dot_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/dotButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/soKasroh"/>
 
     <ImageView
-        android:id="@+id/zoButton"
+        android:id="@+id/toKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/zo"
+        android:src="@drawable/to_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/toButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/dotKasroh"/>
 
     <ImageView
-        android:id="@+id/kalButton"
+        android:id="@+id/zoKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/kal"
+        android:src="@drawable/zo_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/zoButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/toKasroh"/>
 
     <ImageView
-        android:id="@+id/lamButton"
+        android:id="@+id/kalKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/lam"
+        android:src="@drawable/kal_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/kalButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/zoKasroh"/>
 
     <ImageView
-    android:id="@+id/mimButton"
-    android:layout_width="60dp"
-    android:layout_height="wrap_content"
-    android:src="@drawable/mim"
-    android:adjustViewBounds="true"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toStartOf="@+id/lamButton"/>
-
-    <ImageView
-        android:id="@+id/nunButton"
+        android:id="@+id/lamKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/nun"
+        android:src="@drawable/lam_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/mimButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/kalKasroh"/>
 
     <ImageView
-        android:id="@+id/wauButton"
+        android:id="@+id/mimKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/wau"
+        android:src="@drawable/mim_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/nunButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/lamKasroh"/>
 
     <ImageView
-        android:id="@+id/hahaButton"
+        android:id="@+id/nunKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/haha"
+        android:src="@drawable/nun_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/wauButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/mimKasroh"/>
 
     <ImageView
-        android:id="@+id/yaButton"
+        android:id="@+id/wauKasroh"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ya"
+        android:src="@drawable/wau_kasroh"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/hahaButton"/>
+        app:layout_constraintEnd_toStartOf="@+id/nunKasroh"/>
 
+    <ImageView
+        android:id="@+id/hahaKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/haha_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wauKasroh"/>
+
+    <ImageView
+        android:id="@+id/yaKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ya_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hahaKasroh"/>
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="50dp"
@@ -263,5 +262,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:adjustViewBounds="true"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

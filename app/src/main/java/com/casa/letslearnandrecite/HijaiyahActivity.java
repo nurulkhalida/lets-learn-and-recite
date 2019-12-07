@@ -24,6 +24,15 @@ public class HijaiyahActivity extends AppCompatActivity {
             }
         });
 
+        ImageView buttonKasroh = findViewById(R.id.buttonKasroh);
+        buttonKasroh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(HijaiyahActivity.this, KarsohActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
         ImageView backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

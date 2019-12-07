@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".BacaHijaiyahActivity"
-            android:screenOrientation="landscape"></activity>
+        <activity android:name=".KarsohActivity" android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".BacaHijaiyahActivity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".HijaiyahActivity"
             android:screenOrientation="landscape" />
