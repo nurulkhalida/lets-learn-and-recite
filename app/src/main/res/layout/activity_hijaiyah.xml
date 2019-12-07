@@ -46,16 +46,15 @@
         app:layout_constraintEnd_toStartOf="@id/buttonKasroh"/>
 
 
-    <!--TODO JANGAN LUPA DIGANTI SAMA LOGO BACK-->
     <ImageView
-        android:id="@+id/closeButton"
-        android:layout_width="60dp"
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:layout_margin="30dp"
-        android:src="@drawable/exit"
+        android:layout_margin="15dp"
+        android:src="@drawable/kembali"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

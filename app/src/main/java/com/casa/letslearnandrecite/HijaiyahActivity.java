@@ -24,8 +24,8 @@ public class HijaiyahActivity extends AppCompatActivity {
             }
         });
 
-        ImageView closeButton = findViewById(R.id.closeButton);
-        closeButton.setOnClickListener(new View.OnClickListener() {
+        ImageView backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
