@@ -3,7 +3,9 @@ package com.casa.letslearnandrecite.learn;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -14,10 +16,17 @@ import com.casa.letslearnandrecite.learn.hijaiyah.HijaiyahActivity;
 
 public class LearnNowActivity extends AppCompatActivity {
 
+MediaPlayer mp;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_now);
+        // TODO GANTI MUSIKNYA
+        mp = MediaPlayer.create(this, R.raw.contoh_musik);
+
+        playMusikBackground();
 
         ImageView buttonHijaiyah = findViewById(R.id.buttonHijaiyah);
         buttonHijaiyah.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +63,37 @@ public class LearnNowActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    private void playMusikBackground() {
+        //Handler ini buat nge delay lagunya selama sedetik seblum play
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                //Mulai lagu
+                mp.start();
+            }
+        }, 100);
+    }
+    @Override
+    protected void onDestroy() {
+        //Stop musiknya kalo aplikasinya di stop
+        mp.stop();
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        //Pause musiknya kalo aplikasinya di background
+        mp.pause();
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        //Lanjutin muskinya kalo balik ke aplikasi
+        mp.start();
+        super.onResume();
     }
 }
 
