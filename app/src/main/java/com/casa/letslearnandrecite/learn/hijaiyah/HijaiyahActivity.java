@@ -1,18 +1,19 @@
-package com.casa.letslearnandrecite;
+package com.casa.letslearnandrecite.learn.hijaiyah;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class BacaHijaiyahActivity extends AppCompatActivity {
+import com.casa.letslearnandrecite.R;
+
+public class HijaiyahActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_baca_hijaiyah);
+        setContentView(R.layout.activity_hijaiyah);
 
 
         ImageView backButton = findViewById(R.id.backButton);

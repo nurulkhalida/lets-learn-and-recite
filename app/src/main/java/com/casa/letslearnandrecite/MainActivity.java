@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.casa.letslearnandrecite.learn.LearnNowActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         learnNowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, HijaiyahActivity.class);
+                Intent myIntent = new Intent(MainActivity.this, LearnNowActivity.class);
                 startActivity(myIntent);
             }
         });

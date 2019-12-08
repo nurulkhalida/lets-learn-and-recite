@@ -1,4 +1,4 @@
-package com.casa.letslearnandrecite;
+package com.casa.letslearnandrecite.learn.kasroh;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class KarsohActivity extends AppCompatActivity {
+import com.casa.letslearnandrecite.R;
+
+public class KasrohActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

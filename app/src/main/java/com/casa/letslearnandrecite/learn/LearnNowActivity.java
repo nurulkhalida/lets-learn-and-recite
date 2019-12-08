@@ -1,4 +1,4 @@
-package com.casa.letslearnandrecite;
+package com.casa.letslearnandrecite.learn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,18 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class HijaiyahActivity extends AppCompatActivity {
+import com.casa.letslearnandrecite.learn.kasroh.KasrohActivity;
+import com.casa.letslearnandrecite.R;
+import com.casa.letslearnandrecite.learn.hijaiyah.HijaiyahActivity;
+
+public class LearnNowActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hijaiyah);
+        setContentView(R.layout.activity_learn_now);
 
         ImageView buttonHijaiyah = findViewById(R.id.buttonHijaiyah);
         buttonHijaiyah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(HijaiyahActivity.this, BacaHijaiyahActivity.class);
+                Intent myIntent = new Intent(LearnNowActivity.this, HijaiyahActivity.class);
                 startActivity(myIntent);
 
             }
@@ -28,7 +32,7 @@ public class HijaiyahActivity extends AppCompatActivity {
         buttonKasroh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(HijaiyahActivity.this, KarsohActivity.class);
+                Intent myIntent = new Intent(LearnNowActivity.this, KasrohActivity.class);
                 startActivity(myIntent);
             }
         });
