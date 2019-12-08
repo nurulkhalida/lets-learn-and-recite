@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class guess_harakat extends AppCompatActivity {
+public class GuessHarakat extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
