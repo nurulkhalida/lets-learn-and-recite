@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Quiz extends AppCompatActivity {
 
@@ -12,6 +14,23 @@ public class Quiz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         hideSystemUI();
+
+        ImageView tebakHarakat = findViewById(R.id.tebaHarakat);
+        tebakHarakat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TODO masukin fungsi learnow disini
+                //ini nanti diapus aja Toastnya
+                finish();
+            }
+        });
+        ImageView backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     //Fullscreen

@@ -59,23 +59,22 @@
         app:layout_constraintStart_toEndOf="@id/tebakBacaan"/>
 
     <ImageView
-        android:id="@+id/closeButton"
-        android:layout_width="60dp"
+        android:id="@+id/quizText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:layout_margin="30dp"
-        android:src="@drawable/exit"
+        android:src="@drawable/quiz_text"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tebakTanwin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <!--TODO LOGO DIGANTI GAMBAR BACK -->
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:layout_margin="30dp"
-        android:src="@drawable/exit"
+        android:src="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

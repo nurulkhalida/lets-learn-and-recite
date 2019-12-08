@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Quiz"
-            android:screenOrientation="landscape"></activity>
+        <activity android:name=".guess_harakat"></activity>
+        <activity
+            android:name=".Quiz"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="landscape">

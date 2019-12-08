@@ -30,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO masukin fungsi close button disni
-                Toast.makeText(getApplicationContext(), "ini close button", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
 
