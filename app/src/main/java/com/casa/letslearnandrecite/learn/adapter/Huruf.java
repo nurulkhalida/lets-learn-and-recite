@@ -1,4 +1,4 @@
-package com.casa.letslearnandrecite.learn.hijaiyah;
+package com.casa.letslearnandrecite.learn.adapter;
 
 public class Huruf {
     private String nama;

@@ -1,4 +1,4 @@
-package com.casa.letslearnandrecite.learn.hijaiyah;
+package com.casa.letslearnandrecite.learn.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,8 +13,8 @@ import java.util.List;
 
 public class HurufAdapter extends RecyclerView.Adapter<HurufAdapter.HurufViewHolder> {
 
-    interface HurufClickListener {
-        public void onHurufClicked(Huruf huruf);
+    public interface HurufClickListener {
+        void onHurufClicked(Huruf huruf);
     }
 
     private List<Huruf> hurufList;

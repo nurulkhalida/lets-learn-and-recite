@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.casa.letslearnandrecite.R;
+import com.casa.letslearnandrecite.learn.adapter.Huruf;
+import com.casa.letslearnandrecite.learn.adapter.HurufAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
