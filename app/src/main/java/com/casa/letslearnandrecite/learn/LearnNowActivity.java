@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.casa.letslearnandrecite.learn.fathah.FathahActivity;
 import com.casa.letslearnandrecite.learn.kasroh.KasrohActivity;
 import com.casa.letslearnandrecite.R;
 import com.casa.letslearnandrecite.learn.hijaiyah.HijaiyahActivity;
@@ -33,6 +34,15 @@ public class LearnNowActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(LearnNowActivity.this, KasrohActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        ImageView buttonFathah = findViewById(R.id.buttonFathah);
+        buttonFathah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(LearnNowActivity.this, FathahActivity.class);
                 startActivity(myIntent);
             }
         });
