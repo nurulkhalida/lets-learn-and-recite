@@ -5,8 +5,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,11 +22,14 @@ import java.util.List;
 
 public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.PilihanClickListener {
 
+    MediaPlayer mpSuara;
     private RecyclerView pilihanRecyclerView;
     private PilihanAdapter pilihanAdapter;
     private List<Quiz> listQuiz = new ArrayList<>();
     private TextView soalTextView;
     private TextView scoreTextView;
+    private ImageView benarImageView;
+    private ImageView salahImageView;
     private int nomorSoal = 0;
 
     @Override
@@ -34,6 +39,8 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         hideSystemUI();
         soalTextView = findViewById(R.id.soalText);
         scoreTextView = findViewById(R.id.scoreTextView);
+        benarImageView = findViewById(R.id.benarImageView);
+        salahImageView = findViewById(R.id.salahImageView);
 
         isiQuiz();
         tampilkanQuiz();
@@ -49,8 +56,13 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         if (soal.equals(pilihan.getJawab())) {
             score += 10;
             hasil = "Betul";
+
+            nomorSoal++;
+            tampilkanBenar();
+            tampilkanQuiz();
         } else {
             hasil = "Salah";
+            tampilkanSalah();
         }
 
         scoreTextView.setText(Integer.toString(score));
@@ -72,13 +84,25 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         //soal pertama
         bikinSoal(
             "Bi",
-                "بِ",
-                "ب",
-                "bi",
-                "ثَ",
-                "tsa",
-                "جَ",
-                "jim"
+            "بِ",
+            "بِ",
+            "bi",
+            "ثَ",
+            "tsa",
+            "جَ",
+            "jim"
+        );
+
+        //Soal kedua
+        bikinSoal(
+            "Tsa",
+            "ثَ",
+            "بِ",
+            "bi",
+            "ثَ",
+            "tsa",
+            "جَ",
+            "jim"
         );
     }
 
@@ -120,6 +144,41 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         pilihanRecyclerView.setItemAnimator(new DefaultItemAnimator());
         //Masukin Adapter ke RecyclerView
         pilihanRecyclerView.setAdapter(pilihanAdapter);
+    }
+
+    private void tampilkanBenar() {
+        //Kalo ada suara yang play di hapus suara yang sebelumnya
+        if (mpSuara != null && mpSuara.isPlaying()){
+            //hapus suara sebelumnya
+            mpSuara.release();
+        }
+        //masukin suara baru
+        mpSuara = MediaPlayer.create(this, R.raw.sound_benar);
+        //play suara
+        mpSuara.start();
+
+        salahImageView.setVisibility(View.INVISIBLE);
+        benarImageView.setVisibility(View.VISIBLE);
+    }
+
+    private void tampilkanSalah() {
+        //Kalo ada suara yang play di hapus suara yang sebelumnya
+        if (mpSuara != null && mpSuara.isPlaying()){
+            //hapus suara sebelumnya
+            mpSuara.release();
+        }
+        //masukin suara baru
+        mpSuara = MediaPlayer.create(this, R.raw.sound_salah);
+        //play suara
+        mpSuara.start();
+
+        benarImageView.setVisibility(View.INVISIBLE);
+        salahImageView.setVisibility(View.VISIBLE);
+    }
+
+    private void sembunyikanBenarSalah() {
+        benarImageView.setVisibility(View.INVISIBLE);
+        salahImageView.setVisibility(View.INVISIBLE);
     }
 
     //Fullscreen
