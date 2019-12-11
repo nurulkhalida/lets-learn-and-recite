@@ -13,7 +13,7 @@
         android:src="@drawable/bb_backgroundquiz"/>
 
     <ImageView
-        android:id="@+id/tsiAwal"
+        android:id="@+id/soalBackground"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -25,25 +25,26 @@
         app:layout_constraintVertical_bias="0.257" />
 
     <TextView
+        android:id="@+id/soalText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TSI"
         android:textSize="70sp"
         android:textColor="#000"
         android:fontFamily="@font/mouses"
-        app:layout_constraintTop_toTopOf="@id/tsiAwal"
-        app:layout_constraintBottom_toBottomOf="@id/tsiAwal"
-        app:layout_constraintStart_toStartOf="@id/tsiAwal"
-        app:layout_constraintEnd_toEndOf="@id/tsiAwal"/>
+        app:layout_constraintTop_toTopOf="@id/soalBackground"
+        app:layout_constraintBottom_toBottomOf="@id/soalBackground"
+        app:layout_constraintStart_toStartOf="@id/soalBackground"
+        app:layout_constraintEnd_toEndOf="@id/soalBackground"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/hurufHijaiyahRecyclerView"
+        android:id="@+id/pilihanRecyclerView"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toTopOf="@id/tsiAwal"
+        app:layout_constraintTop_toTopOf="@id/soalBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,9 +57,9 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/circle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tsiAwal"
-        app:layout_constraintBottom_toBottomOf="@+id/tsiAwal"
-        app:layout_constraintEnd_toStartOf="@id/tsiAwal"/>
+        app:layout_constraintTop_toTopOf="@+id/soalBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/soalBackground"
+        app:layout_constraintEnd_toStartOf="@id/soalBackground"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,9 +83,9 @@
         android:visibility="gone"
         tools:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/tsiAwal"
-        app:layout_constraintTop_toTopOf="@id/tsiAwal"
-        app:layout_constraintStart_toEndOf="@id/tsiAwal"/>
+        app:layout_constraintBottom_toBottomOf="@id/soalBackground"
+        app:layout_constraintTop_toTopOf="@id/soalBackground"
+        app:layout_constraintStart_toEndOf="@id/soalBackground"/>
 
     <ImageView
         android:layout_width="100dp"
@@ -93,8 +94,8 @@
         android:src="@drawable/falseeee"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/tsiAwal"
-        app:layout_constraintTop_toTopOf="@id/tsiAwal"
-        app:layout_constraintStart_toEndOf="@id/tsiAwal"/>
+        app:layout_constraintBottom_toBottomOf="@id/soalBackground"
+        app:layout_constraintTop_toTopOf="@id/soalBackground"
+        app:layout_constraintStart_toEndOf="@id/soalBackground"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
