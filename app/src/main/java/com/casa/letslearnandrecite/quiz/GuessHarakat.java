@@ -48,9 +48,9 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         totalScoreContainer = findViewById(R.id.totalScoreContainer);
         totalScoreTextView = findViewById(R.id.totalScoreTextView);
 
+        settingRecyclerView();
         isiQuiz();
         tampilkanPertanyaanBerikutnya();
-        settingRecyclerView();
     }
 
     @Override
@@ -79,6 +79,8 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
 
             soalTextView.setText(quiz.getPertanyaan().getPilih());
             pilihanAdapter = new PilihanAdapter(quiz.getListPilihan(), this);
+            //Masukin Adapter ke RecyclerView
+            pilihanRecyclerView.setAdapter(pilihanAdapter);
         } else {
             tampilkanTotalScore();
         }
@@ -87,23 +89,23 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
     private void isiQuiz() {
         //soal pertama
         bikinSoal(
-            "Bi",
-            "بِ",
+            "Tsi",
+            "ِ",
             "بِ",
             "bi",
-            "ثَ",
-            "tsa",
+            "ثِ",
+            "tsi",
             "جَ",
             "jim"
         );
 
         //Soal kedua
         bikinSoal(
-            "Tsa",
-            "ثَ",
-            "بِ",
-            "bi",
-            "ثَ",
+            "Zi",
+            "",
+            "زِ",
+            "zi",
+            "ضُ",
             "tsa",
             "جَ",
             "jim"
@@ -146,8 +148,6 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         pilihanRecyclerView = findViewById(R.id.pilihanRecyclerView);
         pilihanRecyclerView.setLayoutManager(mLayoutManager);
         pilihanRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        //Masukin Adapter ke RecyclerView
-        pilihanRecyclerView.setAdapter(pilihanAdapter);
     }
 
     private void tampilkanBenar() {
