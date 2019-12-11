@@ -4,6 +4,7 @@ public class Huruf {
     private String nama;
     private int gambar;
     private int suara;
+    private String arab;
 
     public Huruf() {
     }
@@ -18,6 +19,11 @@ public class Huruf {
         this.nama = nama;
         this.gambar = gambar;
         this.suara = -1;
+    }
+
+    public Huruf(String nama, String arab) {
+        this.nama = nama;
+        this.arab = arab;
     }
 
     public String getNama() {

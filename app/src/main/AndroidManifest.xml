@@ -21,7 +21,7 @@
         <activity android:name=".quiz.GuessHarakat"
             android:screenOrientation="landscape"></activity>
         <activity
-            android:name=".quiz.Quiz"
+            android:name=".quiz.QuizActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"

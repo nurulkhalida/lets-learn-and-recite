@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.casa.letslearnandrecite.R;
 
-public class Quiz extends AppCompatActivity {
+public class QuizActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class Quiz extends AppCompatActivity {
         tebakHarakat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(Quiz.this, GuessHarakat.class);
+                Intent myIntent = new Intent(QuizActivity.this, GuessHarakat.class);
                 startActivity(myIntent);
 
             }

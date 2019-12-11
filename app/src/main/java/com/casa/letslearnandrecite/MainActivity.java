@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.casa.letslearnandrecite.learn.LearnNowActivity;
-import com.casa.letslearnandrecite.quiz.Quiz;
+import com.casa.letslearnandrecite.quiz.QuizActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         quizText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this, Quiz.class);
+                Intent myIntent = new Intent(MainActivity.this, QuizActivity.class);
                 startActivity(myIntent);
             }
         });

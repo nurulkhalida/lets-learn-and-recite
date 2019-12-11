@@ -62,6 +62,7 @@
         app:layout_constraintEnd_toStartOf="@id/soalBackground"/>
 
     <TextView
+        android:id="@+id/scoreTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40sp"
