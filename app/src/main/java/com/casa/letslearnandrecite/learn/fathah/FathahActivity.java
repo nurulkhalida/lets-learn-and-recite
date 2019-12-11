@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -22,6 +23,9 @@ public class FathahActivity extends AppCompatActivity implements HurufAdapter.Hu
     private RecyclerView hurufRecyclerView;
     private HurufAdapter hurufAdapter;
     private ImageView hurufImageView;
+
+    MediaPlayer mpSuara;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,38 +52,47 @@ public class FathahActivity extends AppCompatActivity implements HurufAdapter.Hu
     public void onHurufClicked(Huruf huruf) {
         //Ganti gambar hurufnya setiap di click
         hurufImageView.setImageResource(huruf.getGambar());
+        if (mpSuara != null && mpSuara.isPlaying()){
+            //hapus suara sebelumnya
+            mpSuara.release();
+        }
+        //masukin suara baru
+        mpSuara = MediaPlayer.create(this, huruf.getSuara());
+        //play suara
+        mpSuara.start();
+
     }
     //TODO NANTI DI UPDATE YAH
     public void isiDataHuruf() {
         //Tambah data ke RecyclerView
-        hurufList.add(new Huruf("Alif Kasroh", R.drawable.alif_kasroh));
-        hurufList.add(new Huruf("Ba Kasroh", R.drawable.ba_kasroh));
-        hurufList.add(new Huruf("Ta Kasroh", R.drawable.ta_kasroh));
-        hurufList.add(new Huruf("Sa Kasroh", R.drawable.sa_kasroh));
-        hurufList.add(new Huruf("Ja Kasroh", R.drawable.ja_kasroh));
-        hurufList.add(new Huruf("Ha Kasroh", R.drawable.ha_kasroh));
-        hurufList.add(new Huruf("Kho Kasroh", R.drawable.kho_kasroh));
-        hurufList.add(new Huruf("Di Kasroh", R.drawable.di_kasroh));
-        hurufList.add(new Huruf("Dza Kasroh", R.drawable.dza_kasroh));
-        hurufList.add(new Huruf("Ro Kasroh", R.drawable.ro_kasroh));
-        hurufList.add(new Huruf("Dzal Kasroh", R.drawable.dzal_kasroh));
-        hurufList.add(new Huruf("Sya Kasroh", R.drawable.sya_kasroh));
-        hurufList.add(new Huruf("Syin Kasroh", R.drawable.syin_kasroh));
-        hurufList.add(new Huruf("So Kasroh", R.drawable.so_kasroh));
-        hurufList.add(new Huruf("Dot Kasroh", R.drawable.dot_kasroh));
-        hurufList.add(new Huruf("To Kasroh", R.drawable.to_kasroh));
-        hurufList.add(new Huruf("Zo Kasroh", R.drawable.zo_kasroh));
-        hurufList.add(new Huruf("Ain Kasroh", R.drawable.ain_kasroh));
-        hurufList.add(new Huruf("Goin Kasroh", R.drawable.goin_kasroh));
-        hurufList.add(new Huruf("Fa Kasroh", R.drawable.fa_kasroh));
-        hurufList.add(new Huruf("Qof Kasroh", R.drawable.qof_kasroh));
-        hurufList.add(new Huruf("Kal Kasroh", R.drawable.kal_kasroh));
-        hurufList.add(new Huruf("Lam Kasroh", R.drawable.lam_kasroh));
-        hurufList.add(new Huruf("Mim Kasroh", R.drawable.mim_kasroh));
-        hurufList.add(new Huruf("Nun Kasroh", R.drawable.nun_kasroh));
-        hurufList.add(new Huruf("Wau Kasroh", R.drawable.wau_kasroh));
-        hurufList.add(new Huruf("Haha Kasroh", R.drawable.haha_kasroh));
-        hurufList.add(new Huruf("Ya Kasroh", R.drawable.ya_kasroh));
+        hurufList.add(new Huruf("Alif Kasroh", R.drawable.alif_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Ba Kasroh", R.drawable.ba_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Ta Kasroh", R.drawable.ta_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Sa Kasroh", R.drawable.sa_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Ja Kasroh", R.drawable.ja_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Ha Kasroh", R.drawable.ha_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Kho Kasroh", R.drawable.kho_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Di Kasroh", R.drawable.di_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Dza Kasroh", R.drawable.dza_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Ro Kasroh", R.drawable.ro_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Dzal Kasroh", R.drawable.dzal_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Sya Kasroh", R.drawable.sya_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Syin Kasroh", R.drawable.syin_kasroh,R.raw.alif));
+        hurufList.add(new Huruf("So Kasroh", R.drawable.so_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Dot Kasroh", R.drawable.dot_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("To Kasroh", R.drawable.to_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Zo Kasroh", R.drawable.zo_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Ain Kasroh", R.drawable.ain_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Goin Kasroh", R.drawable.goin_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Fa Kasroh", R.drawable.fa_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Qof Kasroh", R.drawable.qof_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Kal Kasroh", R.drawable.kal_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Lam Kasroh", R.drawable.lam_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Mim Kasroh", R.drawable.mim_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Nun Kasroh", R.drawable.nun_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Wau Kasroh", R.drawable.wau_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Haha Kasroh", R.drawable.haha_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Ya Kasroh", R.drawable.ya_kasroh, R.raw.alif));
     }
 
     public void settingRecyclerView() {
