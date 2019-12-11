@@ -18,12 +18,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <!-- copy tanda baca, paste dari sebelah kiri huruf kursornya-->
+    <!-- domah ُ  -->
+    <!-- fathah َ  -->
+    <!-- kasrah ِ  -->
     <TextView
         android:id="@+id/bg_quiz_option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        tools:text="ك"
+        tools:text="كُ"
         android:textColor="#000"
         android:textSize="50sp"
         app:layout_constraintTop_toTopOf="@id/bg_quiz"
