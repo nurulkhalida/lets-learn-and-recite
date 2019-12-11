@@ -1,9 +1,11 @@
-package com.casa.letslearnandrecite;
+package com.casa.letslearnandrecite.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+
+import com.casa.letslearnandrecite.R;
 
 public class GuessHarakat extends AppCompatActivity {
 

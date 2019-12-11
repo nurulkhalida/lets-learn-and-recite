@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.casa.letslearnandrecite.learn.LearnNowActivity;
+import com.casa.letslearnandrecite.quiz.Quiz;
 
 public class MainActivity extends AppCompatActivity {
 

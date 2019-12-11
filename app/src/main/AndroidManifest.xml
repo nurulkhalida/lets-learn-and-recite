@@ -18,10 +18,10 @@
         <activity
             android:name=".learn.hijaiyah.HijaiyahActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".GuessHarakat"
+        <activity android:name=".quiz.GuessHarakat"
             android:screenOrientation="landscape"></activity>
         <activity
-            android:name=".Quiz"
+            android:name=".quiz.Quiz"
             android:screenOrientation="landscape" />
         <activity
             android:name=".MainActivity"
