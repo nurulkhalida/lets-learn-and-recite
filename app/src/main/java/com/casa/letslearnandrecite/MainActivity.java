@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         hideSystemUI();
         //Pilih lagunya disini
         mp = MediaPlayer.create(this, R.raw.contoh_musik);
+        //biar lagunya muter terus
+        mp.setLooping(true);
 
         playMusikBackground();
 
