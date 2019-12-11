@@ -1,6 +1,7 @@
 package com.casa.letslearnandrecite.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,7 +11,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.casa.letslearnandrecite.R;
 import com.casa.letslearnandrecite.learn.adapter.Quiz;
@@ -28,8 +28,11 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
     private List<Quiz> listQuiz = new ArrayList<>();
     private TextView soalTextView;
     private TextView scoreTextView;
+    private TextView totalScoreTextView;
     private ImageView benarImageView;
     private ImageView salahImageView;
+    private ConstraintLayout quizContainer;
+    private ConstraintLayout totalScoreContainer;
     private int nomorSoal = 0;
 
     @Override
@@ -41,9 +44,12 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         scoreTextView = findViewById(R.id.scoreTextView);
         benarImageView = findViewById(R.id.benarImageView);
         salahImageView = findViewById(R.id.salahImageView);
+        quizContainer = findViewById(R.id.quizContainer);
+        totalScoreContainer = findViewById(R.id.totalScoreContainer);
+        totalScoreTextView = findViewById(R.id.totalScoreTextView);
 
         isiQuiz();
-        tampilkanQuiz();
+        tampilkanPertanyaanBerikutnya();
         settingRecyclerView();
     }
 
@@ -51,25 +57,21 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
     public void onPilihanClicked(Pilihan pilihan) {
         int score = Integer.parseInt(scoreTextView.getText().toString());
         String soal = soalTextView.getText().toString().toLowerCase();
-        String hasil = "";
 
         if (soal.equals(pilihan.getJawab())) {
             score += 10;
-            hasil = "Betul";
+            scoreTextView.setText(Integer.toString(score));
 
-            nomorSoal++;
             tampilkanBenar();
-            tampilkanQuiz();
         } else {
-            hasil = "Salah";
             tampilkanSalah();
         }
 
-        scoreTextView.setText(Integer.toString(score));
-        Toast.makeText(getApplicationContext(), hasil, Toast.LENGTH_SHORT).show();
+        nomorSoal++;
+        tampilkanPertanyaanBerikutnya();
     }
 
-    private void tampilkanQuiz() {
+    private void tampilkanPertanyaanBerikutnya() {
         boolean adaSoalBerikutnya = nomorSoal < listQuiz.size();
 
         if (adaSoalBerikutnya) {
@@ -77,6 +79,8 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
 
             soalTextView.setText(quiz.getPertanyaan().getPilih());
             pilihanAdapter = new PilihanAdapter(quiz.getListPilihan(), this);
+        } else {
+            tampilkanTotalScore();
         }
     }
 
@@ -179,6 +183,13 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
     private void sembunyikanBenarSalah() {
         benarImageView.setVisibility(View.INVISIBLE);
         salahImageView.setVisibility(View.INVISIBLE);
+    }
+
+    private void tampilkanTotalScore() {
+        String totalScore = scoreTextView.getText().toString();
+        quizContainer.setVisibility(View.GONE);
+        totalScoreContainer.setVisibility(View.VISIBLE);
+        totalScoreTextView.setText(totalScore);
     }
 
     //Fullscreen
