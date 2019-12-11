@@ -17,45 +17,38 @@
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/harakat_tsi"
+        android:src="@drawable/bg_quiz_huruf"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.257" />
 
-    <ImageView
-        android:id="@+id/hijaiyahTsii"
-        android:layout_width="70dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/tsii"
-        app:layout_constraintTop_toBottomOf="@id/tsiAwal"
+        android:text="TSI"
+        android:textSize="70sp"
+        android:textColor="#000"
+        android:fontFamily="@font/mouses"
+        app:layout_constraintTop_toTopOf="@id/tsiAwal"
+        app:layout_constraintBottom_toBottomOf="@id/tsiAwal"
+        app:layout_constraintStart_toStartOf="@id/tsiAwal"
+        app:layout_constraintEnd_toEndOf="@id/tsiAwal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hurufHijaiyahRecyclerView"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="@id/tsiAwal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="30dp"/>
-
-    <ImageView
-        android:id="@+id/hijaiyahTsaa"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tsaa"
-        android:adjustViewBounds="true"
-        app:layout_constraintTop_toBottomOf="@id/tsiAwal"
-        app:layout_constraintEnd_toStartOf="@id/hijaiyahTsii"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="40dp"/>
-
-    <ImageView
-        android:id="@+id/hijaiyaTsuu"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tsuu"
-        android:adjustViewBounds="true"
-        app:layout_constraintTop_toBottomOf="@id/tsiAwal"
-        app:layout_constraintStart_toEndOf="@id/hijaiyahTsii"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="40dp"/>
+        tools:listitem="@layout/item_quiz_pilihan"
+        tools:itemCount="3"/>
 
     <ImageView
         android:id="@+id/scoreBackground"
