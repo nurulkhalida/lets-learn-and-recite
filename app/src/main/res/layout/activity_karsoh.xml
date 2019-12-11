@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".learn.kasroh.KasrohActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+    <ImageView
+        android:id="@+id/alifKasroh"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/alif_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/baKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ba_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/taKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ta_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/baKasroh"/>
+
+    <ImageView
+        android:id="@+id/saKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sa_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/taKasroh"/>
+
+    <ImageView
+        android:id="@+id/jaKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ja_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saKasroh"/>
+
+    <ImageView
+        android:id="@+id/haKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ha_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/jaKasroh"/>
+
+    <ImageView
+        android:id="@+id/khoKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kho_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/haKasroh"/>
+
+    <ImageView
+        android:id="@+id/diKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/di_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/khoKasroh"/>
+
+    <ImageView
+        android:id="@+id/dzaKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dza_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/diKasroh"/>
+
+    <ImageView
+        android:id="@+id/roKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ro_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dzaKasroh"/>
+
+    <ImageView
+        android:id="@+id/dzalKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dzal_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/roKasroh"/>
+
+    <ImageView
+        android:id="@+id/syaKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sya_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dzalKasroh"/>
+
+    <ImageView
+        android:id="@+id/syinKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/syin_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/syaKasroh"/>
+
+    <ImageView
+        android:id="@+id/soKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/so_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/syinKasroh"/>
+
+    <ImageView
+        android:id="@+id/dotKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dot_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/soKasroh"/>
+
+    <ImageView
+        android:id="@+id/toKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/to_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dotKasroh"/>
+
+    <ImageView
+        android:id="@+id/zoKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zo_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toKasroh"/>
+
+    <ImageView
+        android:id="@+id/kalKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kal_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zoKasroh"/>
+
+    <ImageView
+        android:id="@+id/lamKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lam_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/kalKasroh"/>
+
+    <ImageView
+        android:id="@+id/mimKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mim_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lamKasroh"/>
+
+    <ImageView
+        android:id="@+id/nunKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nun_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mimKasroh"/>
+
+    <ImageView
+        android:id="@+id/wauKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wau_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nunKasroh"/>
+
+    <ImageView
+        android:id="@+id/hahaKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/haha_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wauKasroh"/>
+
+    <ImageView
+        android:id="@+id/yaKasroh"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ya_kasroh"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hahaKasroh"/>
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/kembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
