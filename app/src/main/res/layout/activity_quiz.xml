@@ -59,10 +59,10 @@
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:adjustViewBounds="true"
         android:layout_margin="30dp"
-        android:src="@drawable/back"
+        android:src="@drawable/kembali"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
