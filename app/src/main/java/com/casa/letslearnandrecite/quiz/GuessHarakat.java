@@ -111,6 +111,42 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
             "جَ",
             "jim"
         );
+
+        //soal ketiga
+        bikinSoal(
+            "Da",
+            "",
+            "عُ ",
+            "uu",
+            "فِ",
+            "fi",
+            "دَ",
+            "da"
+        );
+
+        //soal keempat
+        bikinSoal(
+            "Dzu",
+            "",
+            "ذُ",
+            "dzu",
+            "ثَ",
+            "tsa",
+            "اِ",
+            "ii"
+        );
+
+        //soal kelima
+        bikinSoal(
+            "Khi",
+            "",
+            "بُ ",
+            "buu",
+            "لَ",
+            "laa",
+            "خِ",
+            "ii"
+        );
     }
 
     public void bikinSoal(
