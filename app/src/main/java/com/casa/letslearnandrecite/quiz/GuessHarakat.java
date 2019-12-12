@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -59,10 +60,9 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         String soal = soalTextView.getText().toString().toLowerCase();
 
         if (soal.equals(pilihan.getJawab())) {
+            tampilkanBenar();
             score += 10;
             scoreTextView.setText(Integer.toString(score));
-
-            tampilkanBenar();
         } else {
             tampilkanSalah();
         }
@@ -81,6 +81,13 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
             pilihanAdapter = new PilihanAdapter(quiz.getListPilihan(), this);
             //Masukin Adapter ke RecyclerView
             pilihanRecyclerView.setAdapter(pilihanAdapter);
+
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    sembunyikanBenarSalah();
+                }
+            }, 1000);
         } else {
             tampilkanTotalScore();
         }
