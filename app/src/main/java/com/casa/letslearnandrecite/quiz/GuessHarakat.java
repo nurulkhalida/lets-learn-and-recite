@@ -86,6 +86,7 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         }
     }
 
+    //TODO isi soal tebak harakat
     protected void isiQuiz() {
         //soal pertama
         bikinSoal(
