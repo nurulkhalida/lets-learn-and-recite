@@ -26,7 +26,7 @@
         android:id="@+id/bg_quiz_option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/mouses"
         tools:text="كُ"
         android:textColor="#000"
         android:textSize="50sp"
