@@ -3,6 +3,7 @@ package com.casa.letslearnandrecite.quiz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -11,10 +12,14 @@ import com.casa.letslearnandrecite.R;
 
 public class QuizActivity extends AppCompatActivity {
 
+    MediaPlayer mp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+        mp = MediaPlayer.create(this, R.raw.backsound_gollygee);
+        playMusikBackground();
         hideSystemUI();
 
         ImageView tebakHarakat = findViewById(R.id.tebaHarakat);
@@ -69,5 +74,28 @@ public class QuizActivity extends AppCompatActivity {
                         // Hide the nav bar and status bar
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
+    }
+    private void playMusikBackground() {
+        mp.start();
+    }
+    @Override
+    protected void onDestroy() {
+        //Stop musiknya kalo aplikasinya di stop
+        mp.stop();
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        //Pause musiknya kalo aplikasinya di background
+        mp.pause();
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        //Lanjutin muskinya kalo balik ke aplikasi
+        mp.start();
+        super.onResume();
     }
 }

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         hideSystemUI();
         //Pilih lagunya disini
-        mp = MediaPlayer.create(this, R.raw.contoh_musik);
+        mp = MediaPlayer.create(this, R.raw.backsound_gollygee);
         //biar lagunya muter terus
         mp.setLooping(true);
 
