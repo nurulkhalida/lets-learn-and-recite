@@ -7,26 +7,62 @@ public class GuessLetter extends GuessHarakat {
     protected void isiQuiz() {
         //soal pertama
         bikinSoal(
-                "Tsi",
+                "نَ",
                 "ِ",
-                "بِ",
                 "bi",
-                "ثِ",
-                "tsi",
-                "جَ",
-                "jim"
+                "بِ ",
+                "lu",
+                "لُ ",
+                "na",
+                "نَ"
         );
 
         //Soal kedua
         bikinSoal(
-                "Zi",
+                "سُ",
                 "",
-                "زِ",
-                "zi",
+                "su",
+                "سُ",
+                "yi",
+                "يِ",
+                "taَ",
+                "تَ"
+        );
+
+        //soal ketiga
+        bikinSoal(
+                "هِ",
+                "",
+                "dhu",
                 "ضُ",
-                "tsa",
-                "جَ",
-                "jim"
+                "gha",
+                "غَ",
+                "hi",
+                "هِ"
+        );
+
+        //soal keempat
+        bikinSoal(
+                "ظُ",
+                "",
+                "zhu",
+                "ظُ",
+                "ra",
+                "رَ",
+                "hi",
+                "حِ"
+        );
+
+        //soal kelima
+        bikinSoal(
+                "فِ",
+                "",
+                "na",
+                "نَ",
+                "fi",
+                "فِ",
+                "ku",
+                "كُ"
         );
     }
 }
