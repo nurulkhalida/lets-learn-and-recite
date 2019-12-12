@@ -21,18 +21,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tebakTanwin"
-        />
-
-    <ImageView
-        android:id="@+id/tebakTanwin"
-        android:layout_width="137dp"
-        android:layout_height="176dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/aa_tanwin"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tebaHarakat"
         app:layout_constraintEnd_toStartOf="@id/tebakBacaan"
         />
 
@@ -44,7 +32,7 @@
         android:src="@drawable/aa_reading"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tebakTanwin"
+        app:layout_constraintStart_toEndOf="@id/tebaHarakat"
         app:layout_constraintEnd_toStartOf="@id/tebakHuruf"/>
 
     <ImageView
@@ -64,7 +52,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/quiz_text"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@id/tebakTanwin"
+        app:layout_constraintBottom_toTopOf="@id/tebakBacaan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
