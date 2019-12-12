@@ -8,9 +8,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.casa.letslearnandrecite.learn.LearnNowActivity;
+import com.casa.letslearnandrecite.quiz.QuizActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,12 +47,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView settingButton = findViewById(R.id.settingButton);
-        settingButton.setOnClickListener(new View.OnClickListener() {
+        ImageView quizText = findViewById(R.id.quizText);
+        quizText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO masukin fungsi setting button loh
-                Toast.makeText(getApplicationContext(), "ini setting button yaa", Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(MainActivity.this, QuizActivity.class);
+                startActivity(myIntent);
             }
         });
     }

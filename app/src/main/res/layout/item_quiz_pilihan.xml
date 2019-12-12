@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <ImageView
+        android:id="@+id/bg_quiz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="W,1:1"
+        android:src="@drawable/bg_quiz_arab"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- copy tanda baca, paste dari sebelah kiri huruf kursornya-->
+    <!-- domah ُ  -->
+    <!-- fathah َ  -->
+    <!-- kasrah ِ  -->
+    <TextView
+        android:id="@+id/bg_quiz_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mouses"
+        tools:text="كُ"
+        android:textColor="#000"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="@id/bg_quiz"
+        app:layout_constraintBottom_toBottomOf="@id/bg_quiz"
+        app:layout_constraintStart_toStartOf="@id/bg_quiz"
+        app:layout_constraintEnd_toEndOf="@id/bg_quiz"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

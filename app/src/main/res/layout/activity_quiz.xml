@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz.QuizActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bb_backgroundquiz"/>
+
+    <ImageView
+        android:id="@+id/tebaHarakat"
+        android:layout_width="137dp"
+        android:layout_height="176dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/aa_harakat"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tebakTanwin"
+        />
+
+    <ImageView
+        android:id="@+id/tebakTanwin"
+        android:layout_width="137dp"
+        android:layout_height="176dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/aa_tanwin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tebaHarakat"
+        app:layout_constraintEnd_toStartOf="@id/tebakBacaan"
+        />
+
+    <ImageView
+        android:id="@+id/tebakBacaan"
+        android:layout_width="137dp"
+        android:layout_height="176dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/aa_reading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tebakTanwin"
+        app:layout_constraintEnd_toStartOf="@id/tebakHuruf"/>
+
+    <ImageView
+        android:id="@+id/tebakHuruf"
+        android:layout_width="137dp"
+        android:layout_height="176dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/aa_letter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tebakBacaan"/>
+
+    <ImageView
+        android:id="@+id/quizText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quiz_text"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tebakTanwin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
