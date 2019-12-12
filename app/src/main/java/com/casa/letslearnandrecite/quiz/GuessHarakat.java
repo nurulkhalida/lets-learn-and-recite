@@ -35,6 +35,8 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
     private ConstraintLayout quizContainer;
     private ConstraintLayout totalScoreContainer;
     private int nomorSoal = 0;
+    private ImageView backImageView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,14 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         quizContainer = findViewById(R.id.quizContainer);
         totalScoreContainer = findViewById(R.id.totalScoreContainer);
         totalScoreTextView = findViewById(R.id.totalScoreTextView);
+        backImageView = findViewById(R.id.buttonQuizBack);
+
+        backImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         settingRecyclerView();
         isiQuiz();
