@@ -10,26 +10,62 @@ public class GuessReading extends GuessHarakat {
     protected void isiQuiz() {
         //soal pertama
         bikinSoal(
-            "Tsi",
+            "Jim",
             "ِ",
-            "بِ",
-            "bi",
-            "ثِ",
-            "tsi",
-            "جَ",
+            "ب",
+            "ba",
+            "ف",
+            "fa",
+            "ج",
             "jim"
         );
 
         //Soal kedua
         bikinSoal(
-            "Zi",
+            "Ghain",
             "",
-            "زِ",
-            "zi",
-            "ضُ",
-            "tsa",
-            "جَ",
-            "jim"
+            "غ",
+            "ghain",
+            "ض",
+            "dho",
+            "ل",
+            "lam"
+        );
+
+        //soal ketiga
+        bikinSoal(
+            "Tha",
+            "",
+            "ض",
+            "dha",
+            "ط",
+            "tha",
+            "ز",
+            "za"
+        );
+
+        //soal keempat
+        bikinSoal(
+            "Fa",
+            "",
+            "ف",
+            "fa",
+            "ت",
+            "ta",
+            "د",
+            "dal"
+        );
+
+        //soal kelima
+        bikinSoal(
+            "Waw",
+            "",
+            "ء",
+            "hamzah",
+            "ع",
+            "ain",
+            "و",
+            "waw"
         );
     }
 }
