@@ -86,7 +86,7 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         }
     }
 
-    private void isiQuiz() {
+    protected void isiQuiz() {
         //soal pertama
         bikinSoal(
             "Tsi",
@@ -112,7 +112,7 @@ public class GuessHarakat extends AppCompatActivity implements PilihanAdapter.Pi
         );
     }
 
-    private void bikinSoal(
+    public void bikinSoal(
         String pertanyaanYangDiTampilkan,
         String pertanyaan,
         String pilihanYangDiTampilkan1,
