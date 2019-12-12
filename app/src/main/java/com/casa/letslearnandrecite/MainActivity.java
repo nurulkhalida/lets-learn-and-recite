@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Bikin Media Player kalo mau mainin musik
     MediaPlayer mp;
+    ImageView soundButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+
+        soundButton = findViewById(R.id.soundButton);
+        soundButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                muteOnOff();
+            }
+        });
+    }
+
+    private void muteOnOff() {
+        //Kalo ada suara yang play di hapus suara yang sebelumnya
+        if (mp != null && mp.isPlaying()){
+            soundButton.setImageResource(R.drawable.sound_on);
+            //stop musik
+            mp.pause();
+        } else {
+            soundButton.setImageResource(R.drawable.sound_off);
+            //play musik
+            mp.start();
+        }
     }
 
     //Fullscreen
