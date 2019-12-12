@@ -1,58 +1,59 @@
-package com.casa.letslearnandrecite;
+package com.casa.letslearnandrecite.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.casa.letslearnandrecite.learn.LearnNowActivity;
-import com.casa.letslearnandrecite.quiz.QuizActivity;
+import com.casa.letslearnandrecite.R;
 
-public class MainActivity extends AppCompatActivity {
+public class QuizActivity extends AppCompatActivity {
 
-    //Bikin Media Player kalo mau mainin musik
     MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        hideSystemUI();
-        //Pilih lagunya disini
+        setContentView(R.layout.activity_quiz);
         mp = MediaPlayer.create(this, R.raw.backsound_gollygee);
-        //biar lagunya muter terus
-        mp.setLooping(true);
-
         playMusikBackground();
+        hideSystemUI();
 
-        ImageView learnNowButton = findViewById(R.id.learnNowButton);
-        learnNowButton.setOnClickListener(new View.OnClickListener() {
+        ImageView tebakHarakat = findViewById(R.id.tebaHarakat);
+        tebakHarakat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, LearnNowActivity.class);
+                Intent myIntent = new Intent(QuizActivity.this, GuessHarakat.class);
+                startActivity(myIntent);
+
+            }
+        });
+        ImageView tebakBacaan = findViewById(R.id.tebakBacaan);
+        tebakBacaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(QuizActivity.this, GuessReading.class);
+                startActivity(myIntent);
+
+            }
+        });
+        ImageView tebakHuruf = findViewById(R.id.tebakHuruf);
+        tebakHuruf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(QuizActivity.this, GuessLetter. class);
                 startActivity(myIntent);
             }
         });
 
-
-        ImageView closeButton = findViewById(R.id.closeButton);
-        closeButton.setOnClickListener(new View.OnClickListener() {
+        ImageView backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
-            }
-        });
-
-        ImageView quizText = findViewById(R.id.quizText);
-        quizText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this, QuizActivity.class);
-                startActivity(myIntent);
             }
         });
     }
@@ -74,28 +75,9 @@ public class MainActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
-
-    // Shows the system bars by removing all the flags
-    // except for the ones that make the content appear under the system bars.
-    private void showSystemUI() {
-        View decorView = getWindow().getDecorView();
-        decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-    }
-
     private void playMusikBackground() {
-        //Handler ini buat nge delay lagunya selama sedetik seblum play
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                //Mulai lagu
-                mp.start();
-            }
-        }, 100);
+        mp.start();
     }
-
     @Override
     protected void onDestroy() {
         //Stop musiknya kalo aplikasinya di stop
