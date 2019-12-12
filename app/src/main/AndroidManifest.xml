@@ -9,17 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".learn.LearnNowActivity"
-            android:screenOrientation="landscape"/>
-        <activity android:name=".learn.fathah.FathahActivity" android:screenOrientation="landscape"></activity>
+        <activity android:name=".quiz.GuessLetter"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".quiz.GuessReading"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".learn.LearnNowActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".learn.fathah.FathahActivity"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".learn.kasroh.KasrohActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".learn.hijaiyah.HijaiyahActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".quiz.GuessHarakat"
-            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".quiz.GuessHarakat"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".quiz.QuizActivity"
             android:screenOrientation="landscape" />

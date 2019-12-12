@@ -26,6 +26,24 @@ public class QuizActivity extends AppCompatActivity {
 
             }
         });
+        ImageView tebakBacaan = findViewById(R.id.tebakBacaan);
+        tebakBacaan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(QuizActivity.this, GuessReading.class);
+                startActivity(myIntent);
+
+            }
+        });
+        ImageView tebakHuruf = findViewById(R.id.tebakHuruf);
+        tebakHuruf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(QuizActivity.this, GuessLetter. class);
+                startActivity(myIntent);
+            }
+        });
+
         ImageView backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
