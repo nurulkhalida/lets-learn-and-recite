@@ -62,37 +62,38 @@ public class FathahActivity extends AppCompatActivity implements HurufAdapter.Hu
         mpSuara.start();
 
     }
-    //TODO NANTI DI UPDATE YAH
     public void isiDataHuruf() {
         //Tambah data ke RecyclerView
-        hurufList.add(new Huruf("Alif Kasroh", R.drawable.alif_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Ba Kasroh", R.drawable.ba_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Ta Kasroh", R.drawable.ta_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Sa Kasroh", R.drawable.sa_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Ja Kasroh", R.drawable.ja_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Ha Kasroh", R.drawable.ha_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Kho Kasroh", R.drawable.kho_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Di Kasroh", R.drawable.di_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Dza Kasroh", R.drawable.dza_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Ro Kasroh", R.drawable.ro_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Dzal Kasroh", R.drawable.dzal_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Sya Kasroh", R.drawable.sya_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Syin Kasroh", R.drawable.syin_kasroh,R.raw.alif));
-        hurufList.add(new Huruf("So Kasroh", R.drawable.so_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Dot Kasroh", R.drawable.dot_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("To Kasroh", R.drawable.to_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Zo Kasroh", R.drawable.zo_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Ain Kasroh", R.drawable.ain_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Goin Kasroh", R.drawable.goin_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Fa Kasroh", R.drawable.fa_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Qof Kasroh", R.drawable.qof_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Kal Kasroh", R.drawable.kal_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Lam Kasroh", R.drawable.lam_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Mim Kasroh", R.drawable.mim_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Nun Kasroh", R.drawable.nun_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Wau Kasroh", R.drawable.wau_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Haha Kasroh", R.drawable.haha_kasroh, R.raw.alif));
-        hurufList.add(new Huruf("Ya Kasroh", R.drawable.ya_kasroh, R.raw.alif));
+        hurufList.add(new Huruf("Alif Fathah", R.drawable.alif_kasroh, R.raw.alif_fathah));
+        hurufList.add(new Huruf("Ba Fathah", R.drawable.ba_kasroh, R.raw.ba_fathah));
+        hurufList.add(new Huruf("Ta Fathah", R.drawable.ta_kasroh, R.raw.ta));
+        hurufList.add(new Huruf("Sa Fathah", R.drawable.sa_kasroh, R.raw.sa_fathah));
+        hurufList.add(new Huruf("Ja Fathah", R.drawable.ja_kasroh, R.raw.ja_fathah));
+        hurufList.add(new Huruf("Ha Fathah", R.drawable.ha_kasroh, R.raw.ha_fathah));
+        hurufList.add(new Huruf("Kho Fathah", R.drawable.kho_kasroh, R.raw.kho_fathah));
+        hurufList.add(new Huruf("Di Fathah", R.drawable.di_kasroh, R.raw.da_fathah));
+        hurufList.add(new Huruf("Dza Fathah", R.drawable.dza_kasroh, R.raw.dza_fathah));
+        hurufList.add(new Huruf("Ro Fathah", R.drawable.ro_kasroh, R.raw.ro_fathah));
+        hurufList.add(new Huruf("Dzal Fathah", R.drawable.dzal_kasroh, R.raw.dzal_fathah));
+        hurufList.add(new Huruf("Sya Fathah", R.drawable.sya_kasroh, R.raw.sya_fathah));
+        hurufList.add(new Huruf("Syin Fathah", R.drawable.syin_kasroh,R.raw.sya_fathah));
+        hurufList.add(new Huruf("So Fathah", R.drawable.so_kasroh, R.raw.so_fathah));
+        hurufList.add(new Huruf("Dot Fathah", R.drawable.dot_kasroh, R.raw.do_fathah));
+        hurufList.add(new Huruf("To Fathah", R.drawable.to_kasroh, R.raw.to));
+        hurufList.add(new Huruf("Zo Fathah", R.drawable.zo_kasroh, R.raw.tzo_fathah));
+        hurufList.add(new Huruf("Ain Fathah", R.drawable.ain_kasroh, R.raw.ain_fathah));
+        //TODO GANTI SUARA GOIN FATHAH
+        hurufList.add(new Huruf("Goin Fathah", R.drawable.goin_kasroh, R.raw.ain_fathah));
+        hurufList.add(new Huruf("Fa Fathah", R.drawable.fa_kasroh, R.raw.fa_fathah));
+        hurufList.add(new Huruf("Qof Fathah", R.drawable.qof_kasroh, R.raw.qof_fathah));
+        hurufList.add(new Huruf("Kal Fathah", R.drawable.kal_kasroh, R.raw.kal_fathah));
+        // TODO GANTI SUARA LAM FATHAH
+        hurufList.add(new Huruf("Lam Fathah", R.drawable.lam_kasroh, R.raw.lam));
+        hurufList.add(new Huruf("Mim Fathah", R.drawable.mim_kasroh, R.raw.mim_fathah));
+        hurufList.add(new Huruf("Nun Fathah", R.drawable.nun_kasroh, R.raw.nun_fathah));
+        hurufList.add(new Huruf("Wau Fathah", R.drawable.wau_kasroh, R.raw.wau_fathah));
+        hurufList.add(new Huruf("Haha Fathah", R.drawable.haha_kasroh, R.raw.haha_fathah));
+        hurufList.add(new Huruf("Ya Fathah", R.drawable.ya_kasroh, R.raw.ya_fathah));
     }
 
     public void settingRecyclerView() {
