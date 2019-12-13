@@ -7,10 +7,10 @@
     tools:context=".learn.hijaiyah.HijaiyahActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/background"
-        android:scaleType="centerCrop"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/background"
+    android:scaleType="centerCrop"/>
 
     <ImageView
         android:id="@+id/hurufImageView"
