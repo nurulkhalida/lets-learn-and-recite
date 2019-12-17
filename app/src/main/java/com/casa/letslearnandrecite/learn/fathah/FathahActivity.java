@@ -33,8 +33,7 @@ public class FathahActivity extends AppCompatActivity implements HurufAdapter.Hu
         setContentView(R.layout.activity_hijaiyah);
 
         hurufImageView = findViewById(R.id.hurufImageView);
-        //TODO GANTI ALIF FATHAH YAH
-        hurufImageView.setImageResource(R.drawable.alif_kasroh);
+        hurufImageView.setImageResource(R.drawable.alifkas);
 
         ImageView backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +81,6 @@ public class FathahActivity extends AppCompatActivity implements HurufAdapter.Hu
         hurufList.add(new Huruf("To Fathah", R.drawable.thokas, R.raw.to));
         hurufList.add(new Huruf("Zo Fathah", R.drawable.zhokas, R.raw.tzo_fathah));
         hurufList.add(new Huruf("Ain Fathah", R.drawable.ainkas, R.raw.ain_fathah));
-        //TODO GANTI SUARA GOIN FATHAH
         hurufList.add(new Huruf("Goin Fathah", R.drawable.ghokas, R.raw.ain_kasroh));
         hurufList.add(new Huruf("Fa Fathah", R.drawable.faakas, R.raw.fa_kasroh));
         hurufList.add(new Huruf("Qof Fathah", R.drawable.qookas, R.raw.qof_fathah));

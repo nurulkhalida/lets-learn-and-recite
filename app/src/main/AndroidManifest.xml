@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".quiz.GuessLetter"
+        <activity android:name=".learn.fathah.DammahActivity"
             android:screenOrientation="landscape"></activity>
-        <activity android:name=".quiz.GuessReading"
+        <activity
+            android:name=".quiz.GuessLetter"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".quiz.GuessReading"
             android:screenOrientation="landscape" />
         <activity
             android:name=".learn.LearnNowActivity"

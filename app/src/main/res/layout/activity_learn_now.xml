@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/buttonFathah"/>
+        app:layout_constraintStart_toEndOf="@id/buttonDammah"/>
 
     <ImageView
         android:id="@+id/buttonFathah"
@@ -43,6 +43,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonHijaiyah"
+        app:layout_constraintEnd_toStartOf="@id/buttonDammah"/>
+
+    <ImageView
+        android:id="@+id/buttonDammah"
+        android:layout_width="134dp"
+        android:layout_height="178dp"
+        android:src="@drawable/dammah_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonFathah"
         app:layout_constraintEnd_toStartOf="@id/buttonKasroh"/>
 
 

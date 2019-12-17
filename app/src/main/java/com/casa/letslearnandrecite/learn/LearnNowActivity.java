@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.casa.letslearnandrecite.learn.fathah.DammahActivity;
 import com.casa.letslearnandrecite.learn.fathah.FathahActivity;
 import com.casa.letslearnandrecite.learn.kasroh.KasrohActivity;
 import com.casa.letslearnandrecite.R;
@@ -24,7 +25,7 @@ MediaPlayer mp;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_now);
         // TODO GANTI MUSIKNYA
-        mp = MediaPlayer.create(this, R.raw.contoh_musik);
+        mp = MediaPlayer.create(this, R.raw.backsound_gollygee);
 
         playMusikBackground();
 
@@ -52,6 +53,15 @@ MediaPlayer mp;
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(LearnNowActivity.this, FathahActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        ImageView buttonDammah = findViewById(R.id.buttonDammah);
+        buttonDammah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(LearnNowActivity.this, DammahActivity.class);
                 startActivity(myIntent);
             }
         });
