@@ -64,14 +64,33 @@ public class DammahActivity extends AppCompatActivity  implements HurufAdapter.H
 
     public void isiDataHuruf() {
         //Tambah data ke RecyclerView
-        hurufList.add(new Huruf("Alif", R.drawable.alif, R.raw.alif));
-        hurufList.add(new Huruf("Ba", R.drawable.ba, R.raw.ba));
-        hurufList.add(new Huruf("Ta", R.drawable.ta, R.raw.ta));
-        hurufList.add(new Huruf("Sa", R.drawable.sa, R.raw.tsa));
-        hurufList.add(new Huruf("Ja", R.drawable.ja, R.raw.ja));
-        hurufList.add(new Huruf("Ha", R.drawable.ha, R.raw.ha));
-        hurufList.add(new Huruf("Kho", R.drawable.kho, R.raw.kho));
-        hurufList.add(new Huruf("Da", R.drawable.da, R.raw.da));
+        hurufList.add(new Huruf("Alif", R.drawable.alifdom, R.raw.alif_dammah));
+        hurufList.add(new Huruf("Ba", R.drawable.baadom, R.raw.ba_dammah));
+        hurufList.add(new Huruf("Ta", R.drawable.taadom, R.raw.ta_dammah));
+        hurufList.add(new Huruf("Sa", R.drawable.tsudom, R.raw.tsa_dammah));
+        hurufList.add(new Huruf("Ja", R.drawable.jaadom, R.raw.ja_dammah));
+        hurufList.add(new Huruf("Ha", R.drawable.haadom, R.raw.ha_dammah));
+        hurufList.add(new Huruf("Kho", R.drawable.khodom, R.raw.kho_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.daadom, R.raw.da_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.dzuu, R.raw.dza_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.raadom, R.raw.ro_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.zuu, R.raw.dzal_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.sun, R.raw.sa_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.syaadom, R.raw.sya_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.shoddom, R.raw.so_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.dhoddom, R.raw.do_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.thodom, R.raw.to_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.zaadom, R.raw.tzo_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.aindom, R.raw.ain_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.faadom, R.raw.fa_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.qoodom, R.raw.qof_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.kafdom, R.raw.kal_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.lamdom, R.raw.lam_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.mimdom, R.raw.mim_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.nundom, R.raw.nun_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.waadom, R.raw.wau_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.haadom, R.raw.ha_dammah));
+        hurufList.add(new Huruf("Da", R.drawable.yaadom, R.raw.ya_dammah));
     }
 
     public void settingRecyclerView() {
